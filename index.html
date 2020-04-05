@@ -109,7 +109,7 @@ span:first-child {
 }
 .set div:nth-child(4) {
   left: 0%;
-  animation: animate 15s linear infinite;
+  animation: animate 15s linear infinite ;
 }
 .set div:nth-child(5) {
   left: 80%;
@@ -138,7 +138,7 @@ span:first-child {
 @keyframes animate {
   0%
   {
-    top: -50%;
+    top: -40%;
     opacity: 0;
     transform: translateX(20px) rotate(0deg)
   }
@@ -180,6 +180,65 @@ h2 {
   font-size: 8em;
   font-family: sans-serif;
 }
+.set2 {
+  transform: rotateY(180deg);
+  filter: blur(2px);
+}
+.heart{
+  position: relative;
+  left: 50px;
+  width: 100px;
+  height: 100px;
+  background: #f00;
+  transform: rotate(45deg) translate(10px,10px);
+  animation: animatio 1s linear infinite;
+}
+.heart:before{
+  content: '';
+  width: 100%;
+  height: 100%;
+  background:#f00;
+  position: absolute;
+  top: -50%;
+  left :0;
+  border-radius: 50%;
+
+}
+
+.heart:after{
+  content: '';
+  width: 100%;
+  height: 100%;
+  background:#f00;
+  position: absolute;
+  bottom: : 0;
+  right: 50%;
+  border-radius:50%;
+
+}
+@keyframes animatio{
+  0%{
+     transform: rotate(45deg) translate(10px,10px) scale(1);
+  }
+   25%{
+     transform: rotate(45deg) translate(10px,10px) scale(1);
+  }
+   30%{
+     transform: rotate(45deg) translate(10px,10px) scale(1.4);
+  }
+   50%{
+     transform: rotate(45deg) translate(10px,10px) scale(1.2);
+  } 
+  70%{
+     transform: rotate(45deg) translate(10px,10px) scale(1.4);
+  }
+   90%{
+     transform: rotate(45deg) translate(10px,10px) scale(1);
+  }
+   100%{
+     transform: rotate(45deg) translate(10px,10px) scale(1);
+  }
+}
 
 	</style>
 </head>
@@ -190,28 +249,21 @@ h2 {
 <h1><span>HAPPY</span> <span id="a">BIRTHDAY</span><span id="b">DA</span> <span>KUTTIMA</span></h1>
 <div class="set">
     <div><img src="https://pluspng.com/img-png/balloon-png-image-1535.png" height="150px" width="150px"></div>
-    <div><img src="https://pluspng.com/img-png/balloon-png-image-1535.png" height="150px" width="150px"></div>
-    <div><img src="https://pluspng.com/img-png/balloon-png-image-1535.png" height="150px" width="150px"></div>
+    <div><img src="https://freepngimg.com/thumb/party/29076-3-party-transparent-background-thumb.png" height="150px" width="150px"></div>
     <div><img src="https://pluspng.com/img-png/balloon-png-image-1535.png" height="150px" width="100px"></div>
-    <div><img src="https://pluspng.com/img-png/balloon-png-image-1535.png" height="150px" width="150px"></div>
+  
     <div><img src="https://pluspng.com/img-png/balloon-png-image-1535.png" height="150px" width="120px"></div>
-    <div><img src="https://pluspng.com/img-png/balloon-png-image-1535.png" height="150px" width="150px"></div>
     <div><img src="https://pluspng.com/img-png/balloon-png-image-1535.png" height="150px" width="150px"></div>
     <div><img src="https://pluspng.com/img-png/balloon-png-image-1535.png" height="150px" width="150px"></div>
     <div><img src="https://pluspng.com/img-png/balloon-png-image-1535.png" height="150px" width="150px"></div>
   </div>
   <div class="set set2">
-    <div><img src="https://pluspng.com/img-png/balloon-png-image-1535.png" height="240px" width="240px"></div>
     <div><img src="https://pluspng.com/img-png/balloon-png-image-1535.png" height="200px" width="200px"></div>
     <div><img src="https://pluspng.com/img-png/balloon-png-image-1535.png" height="200px" width="200px"></div>
-    <div><img src="https://pluspng.com/img-png/balloon-png-image-1535.png" height="200px" width="200px"></div>
-    <div><img src="https://pluspng.com/img-png/balloon-png-image-1535.png" height="200px" width="200px"></div>
+        <div><img src="https://pluspng.com/img-png/balloon-png-image-1535.png" height="200px" width="200px"></div>
  </div>
-    
-</section>
-</div>
-</div>
-</html>
-</div>
-</div>
-</html>
+  <img src="https://pngimage.net/wp-content/uploads/2018/05/baby-illustration-png-4.png" width="100px" height="100px">
+  <div class="center">
+  <div class="heart"></div>
+    </div>
+</section> </div> </div> </html>
